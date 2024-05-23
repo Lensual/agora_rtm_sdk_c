@@ -1,0 +1,32 @@
+# CMAKE
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+*.cmake
+DartConfiguration.tcl
+null.d
+
+# vscode
+build
+.VSCodeCounter
+.vscode/*.log
+.vscode
+
+# bin
+libagora_rtm_sdk_c.a
+
+# agora sdk
+agora_rtm_sdk-prefix
+agora_rtm_cache.db
+agorartmdns.dat
+agorartmreport.dat
+crash_context_v1

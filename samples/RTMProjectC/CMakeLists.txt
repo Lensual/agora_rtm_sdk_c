@@ -1,0 +1,13 @@
+# CMakeLists.txt
+cmake_minimum_required (VERSION 2.8)
+project(RTMProjectC)
+set(TARGET_NAME RTMQuickStartC)
+set(SOURCES RTMQuickStartC.c)
+set(HEADERS)
+set(TARGET_BUILD_TYPE "Debug")
+set(CMAKE_CXX_FLAGS "-fPIC -O2 -g -std=c++11 -msse2")
+include_directories(${CMAKE_SOURCE_DIR}/../../include)
+link_directories(${CMAKE_SOURCE_DIR}/../..)
+link_directories(${CMAKE_SOURCE_DIR}/../../../agora_rtm_sdk/libs)
+add_executable(${TARGET_NAME} ${SOURCES} ${HEADERS})
+target_link_libraries(${TARGET_NAME} agora_rtm_sdk_c stdc++ agora_rtm_sdk pthread)
