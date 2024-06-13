@@ -56,7 +56,7 @@ void C_IMetadata_release(C_IMetadata *this_)
 }
 #pragma endregion C_IMetadata
 
-#pragma endregion C_IRtmStorage
+#pragma region C_IRtmStorage
 C_IMetadata *C_IRtmStorage_createMetadata(C_IRtmStorage *this_)
 {
   return ((IRtmStorage *)this_)->createMetadata();

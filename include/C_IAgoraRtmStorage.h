@@ -91,7 +91,7 @@ extern "C"
 #pragma endregion C_IMetadata
 
   typedef void C_IRtmStorage;
-#pragma endregion C_IRtmStorage
+#pragma region C_IRtmStorage
   /** Creates the metadata object and returns the pointer.
    * @return Pointer of the metadata object.
    */
