@@ -308,7 +308,9 @@ extern "C"
    */
   typedef void C_IMessage;
 #pragma region C_IMessage
-  static C_IMessage *C_IMessage_createMessage();
+  // note: undefined reference to `agora::rtm::IMessage::createMessage()'
+  // may be deprecated?
+  // C_IMessage *C_IMessage_createMessage();
   void C_IMessage_Delete(C_IMessage *this_);
 
   /**
@@ -393,7 +395,9 @@ extern "C"
    * @return
    * - An IChannelAttributes instance, if the method call succeeds.
    */
-  static C_IChannelAttributes *C_IChannelAttributes_createChannelAttributes();
+  // note: undefined reference to `agora::rtm::IChannelAttributes::createChannelAttributes()'
+  // may be deprecated?
+  // C_IChannelAttributes *C_IChannelAttributes_createChannelAttributes();
   /**
    * Adds an attribute to a specified channel.
    *

@@ -12,10 +12,12 @@ using namespace agora::rtm;
 #pragma region agora::rtm
 
 #pragma region C_IMessage
-static C_IMessage *C_IMessage_createMessage()
-{
-  return (C_IMessage *)IMessage::createMessage();
-}
+// note: undefined reference to `agora::rtm::IMessage::createMessage()'
+// may be deprecated?
+// C_IMessage *C_IMessage_createMessage()
+// {
+//   return (C_IMessage *)IMessage::createMessage();
+// }
 void C_IMessage_Delete(C_IMessage *this_)
 {
   delete (IMessage *)this_;
@@ -79,10 +81,12 @@ void C_IChannelMember_release(C_IChannelMember *this_)
 #pragma endregion C_IChannelMember
 
 #pragma region C_IChannelAttributes
-static C_IChannelAttributes *C_IChannelAttributes_createChannelAttributes()
-{
-  return (C_IChannelAttributes *)IChannelAttributes::createChannelAttributes();
-}
+// note: undefined reference to `agora::rtm::IChannelAttributes::createChannelAttributes()'
+// may be deprecated?
+// C_IChannelAttributes *C_IChannelAttributes_createChannelAttributes()
+// {
+//   return (C_IChannelAttributes *)IChannelAttributes::createChannelAttributes();
+// }
 int C_IChannelAttributes_addAttribute(C_IChannelAttributes *this_, const char *key, const char *value)
 {
   return ((IChannelAttributes *)this_)->addAttribute(key, value);
