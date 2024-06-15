@@ -1,5 +1,5 @@
 // 引入AgoraRTM SDK
-#include "IAgoraRtmClient.h"
+#include "AgoraRtmBase.h"
 
 using namespace agora;
 using namespace agora::rtm;
@@ -161,6 +161,6 @@ void C_RtmEncryptionConfig_Delete(struct C_RtmEncryptionConfig *this_)
     this_ = nullptr;
 }
 
-#pragma endregion agora
-
 #pragma endregion agora::rtm
+
+#pragma endregion agora

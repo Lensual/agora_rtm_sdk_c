@@ -1,8 +1,6 @@
 #ifndef C_I_AGORA_RTM_CLIENT_H
 #define C_I_AGORA_RTM_CLIENT_H
 
-#include <stdint.h>
-#include <stdbool.h>
 #include "C_IAgoraStreamChannel.h"
 #include "C_IAgoraRtmStorage.h"
 #include "C_IAgoraRtmPresence.h"
