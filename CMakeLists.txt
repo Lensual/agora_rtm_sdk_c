@@ -1,3 +1,7 @@
+set(CMAKE_SKIP_RPATH TRUE)
+set(CMAKE_SKIP_BUILD_RPATH TRUE)
+set(CMAKE_SKIP_INSTALL_RPATH TRUE)
+
 cmake_minimum_required(VERSION 3.0.0)
 project(agora_rtm_sdk_c VERSION 2.1.12)
 
